@@ -1,1 +1,14 @@
 <h3>Snazzy Home Page</h3>
+
+<div>
+  <label for="message">New Message:</label>
+  <input id='message' type="text" ng-model='newMessage'>
+  <button ng-click='addMessage(newMessage)'>Add</button>
+</div>
+<div>
+  <ul>
+    <li ng-repeat='messageObj in messages'>
+      {{messageObj.text}}
+    </li>
+  </ul>
+</div>
